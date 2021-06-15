@@ -13,7 +13,7 @@
 	width: 100%;
 	height: 100%;
 	flex-direction: column;
-	
+	overflow-x: hidden;
 }
 .page{
 	-webkit-box-flex: 1;
@@ -48,31 +48,40 @@
     width: 100%;
     margin-top:20px;
 }
+
+
 .logo{
     width: 20%;
+    animation: logo 1.5s linear ;
+}
+
+@keyframes logo{
+    0%  { opacity: 0;}
+   
+   100% { opacity: 1;}
 }
 .text_pp{
-    margin: 0px 0;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 30px;
     color: #755c5c;
     text-align: center;
+
 }
 ._anima1 {
-	 animation: anima1 1s linear ;
+	 animation: anima1 1.5s ease ;
 }
 ._anima2 {
-	 animation: anima2 1s linear ;
+	 animation: anima2 1.5s ease ;
 }
 @keyframes anima1{
 	0%   { 
-			transform: translate(120%, 0%);
+			transform: translateX(120%);
  			opacity: 0;
 	}
    
    100% { 
-   		 	transform: translate(0, 0);
+   		 	transform: translateX(0);
  			opacity: 1;
    	}
 }
@@ -215,8 +224,7 @@
 }
 .slider__item img{
     width: 270px;
-    height: auto;
-}
+   }
 
 @media screen and (max-width: 600px){
     .form-body {
