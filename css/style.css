@@ -174,14 +174,33 @@
 	 background-image:linear-gradient(45deg,  #d3991b 0%, #eaba62 50%, #d3991b 100%);
 }      
 
-
-
-
-
-
-
-
-
+.modal {
+    display: none;
+    position: fixed;
+    top:  0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 1043;
+    overflow: auto;
+}
+.modal__content {
+    text-align: center;
+    vertical-align: middle;
+    margin: 250px auto;
+    background-color: #fff;
+    padding: 5px 10px 40px 10px;
+    width: 340px;
+    border-radius: 5px;
+    z-index: 999999;
+}
+.close {
+    color: #000;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
 
 
 
