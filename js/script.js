@@ -25,7 +25,7 @@ let ibg=document.querySelectorAll(".ibg"); for (var i = 0; i < ibg.length; i++) 
 }
 ibg();
 
-
+/*
 
 document.addEventListener("DOMContentLoaded", function () {
  
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
+*/
 
 
 
